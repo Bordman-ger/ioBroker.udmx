@@ -27,6 +27,7 @@ function DmxAdapter() {
     // private fields
     that._dmxBuffer = null;
     that._udmxDevice = null;
+    that._udmxDeviceList = null;
     
     // register event handlers
     that.adapter.on('ready', function () {
@@ -59,6 +60,12 @@ DmxAdapter.prototype.main = function (allStates) {
         that._udmxDevice = usb.findByIds(vendorId, productId);
         if (!that._udmxDevice) {
             that.adapter.log.error("Couldn't find an NanoDMX USB adapter, not doing anything!");
+//Test Devicelist
+            that._udmxDeviceList = usb.getDeviceList(): Device[];
+            for (var i in that._udmxDeviceList) {
+              that.adapter.log.error(a[i]);
+            }
+//        
             return;
         }
         
