@@ -15,7 +15,7 @@ var buffer = require('buffer');
 // var productId = 0x5dc;
 
 // These variables specify the DMX4All NanoDMX device
-var vendorId = 0x03eb;
+var vendorId = 0x03EB;
 var productId = 0x2018;
 
 function DmxAdapter() {
