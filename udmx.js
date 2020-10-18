@@ -63,7 +63,7 @@ DmxAdapter.prototype.main = function (allStates) {
 //Test Devicelist
             that._udmxDeviceList = usb.getDeviceList(): Device[];
             for (var i in that._udmxDeviceList) {
-              that.adapter.log.error(a[i]);
+              that.adapter.log.error(that._udmxDeviceList[i]);
             }
 //        
             return;
