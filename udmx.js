@@ -11,8 +11,12 @@ var usb = require('usb');
 var buffer = require('buffer');
 
 // These variables specify the anyma uDMX device
-var vendorId = 0x16c0;
-var productId = 0x5dc;
+// var vendorId = 0x16c0;
+// var productId = 0x5dc;
+
+// These variables specify the DMX4All NanoDMX device
+var vendorId = 0x03eb;
+var productId = 0x2018;
 
 function DmxAdapter() {
     var that = this;
