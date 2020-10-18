@@ -61,7 +61,7 @@ DmxAdapter.prototype.main = function (allStates) {
         if (!that._udmxDevice) {
             that.adapter.log.error("Couldn't find an NanoDMX USB adapter, not doing anything!");
 //Test Devicelist
-            that._udmxDeviceList = usb.getDeviceList(): Device[];
+            that._udmxDeviceList = usb.getDeviceList();
             for (var i in that._udmxDeviceList) {
               that.adapter.log.error(that._udmxDeviceList[i]);
             }
