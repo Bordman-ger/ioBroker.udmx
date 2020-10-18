@@ -66,7 +66,7 @@ DmxAdapter.prototype.main = function (allStates) {
             that.adapter.log.warn(that._udmxDeviceList[1].deviceDescriptor);
             that.adapter.log.warn("Device 2:");
             that.adapter.log.warn(that._udmxDeviceList[2].deviceDescriptor);            
-            }
+            
 //        
             return;
         }
