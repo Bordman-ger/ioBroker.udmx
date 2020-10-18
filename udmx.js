@@ -58,7 +58,7 @@ DmxAdapter.prototype.main = function (allStates) {
     } else {
         that._udmxDevice = usb.findByIds(vendorId, productId);
         if (!that._udmxDevice) {
-            that.adapter.log.error("Couldn't find an Anyma USB adapter, not doing anything!");
+            that.adapter.log.error("Couldn't find an NanoDMX USB adapter, not doing anything!");
             return;
         }
         
